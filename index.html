@@ -12,30 +12,36 @@
 <body>
 
 <div class="container">
-	<p><a href="https://en.wikipedia.org/wiki/Kylie_Minogue">Kylie Minogue</a></p>
+
+<p><a href="https://en.wikipedia.org/wiki/Kylie_Minogue">Kylie Minogue</a></p>
+<p> This is a quiz about one of my favorite pop stars. </p>
 <form>
-<p>
+<div class="form-group">
   <textarea id="welcome">
   Welcome to the Kylie Minogue quiz. Please look to the Wikipedia page for the answers to the following questions.
   </textarea>
-</p>
-<p>
-  What is the name of the TV show that Kylie Minogue served as a judge on?<br>
-  <input type="text" name="show" id="tvshow">
-</p>
-
-<p>
-  What greek goddess did Kylie Minogue name one of her albums after?<br>
-  <input type="text" name="goddess" id="goddess">
-</p>
-
-<p>
-  What character did Kylie Minogue play in the live-action adaptation of Street Fighter?<br>
-  <input type="text" name="goddess" id="cammy">
-</p>
+</div>
 
 <div class="form-group">
-  Who is Kylie Minogue's husband? <br>
+  <label for="tvshow">
+  What is the name of the TV show that Kylie Minogue served as a judge on?</label><br>
+  <input type="text" name="show" id="tvshow">
+</div>
+
+<div class="form-group">
+  <label for="goddess">
+  What Greek goddess did Kylie Minogue name one of her albums after?</label><br>
+  <input type="text" name="goddess" id="goddess">
+</div>
+
+<div class="form-group">
+  <label for="character">
+  What character did Kylie Minogue play in the live-action adaptation of Street Fighter?</label><br>
+  <input type="text" name="character" id="cammy">
+</div>
+
+<div class="form-group">
+  <label for="husband"> Who is Kylie Minogue's husband? </label> <br>
   <label class ="radio-inline">
   <input type="radio" name="husband" value="martinez" id="husband1"> Olivier Martinez<br>
   </label>
@@ -53,8 +59,9 @@
   </label>
 </div>
 
-<p>
-  Which three of these songs are NOT by Kylie Minogue?<br>
+<div class="form-group">
+  <label for="character">
+  Which three of these songs are NOT by Kylie Minogue?</label><br>
   <input type="checkbox" name="song" value="timebomb" id="song1">Timebomb<br>
   <input type="checkbox" name="song" value="vogue" id="song2">Vogue<br>
   <input type="checkbox" name="song" value="california" id="song3">California Gurls<br>
@@ -63,10 +70,10 @@
   <input type="checkbox" name="song" value="gomw" id="song6">Get Outta My Way<br>
   <input type="checkbox" name="song" value="cancel" id="song7">I Was Gonna Cancel<br>
   <input type="checkbox" name="song" value="speakerphone" id="song8">Speakerphone
-</p>
+</div>
 
-<p>
-  What was Kylie Minogue diagnosed with in 2005?<br>
+<div class="form-group">
+  <label for="diagnosis">What was Kylie Minogue diagnosed with in 2005?</label>
 <select>
   <option value="narcolepsy" id="diagnosis1">Narcolepsy</option>
   <option value="skin" id="diagnosis2">Skin Cancer</option>
@@ -77,11 +84,11 @@
   <option value="parkinson" id="diagnosis7">Parkinson's Disease</option>
   <option value="lupus" id="diagnosis8">Lupus</option>
 </select>
-</p>
+</div>
 
 <p>
-<button type="submit" value="Submit">Submit</button>
-<button type="reset" value="Reset">Reset</button>
+<input class="btn btn-default" value="Submit"></button>
+<input class="btn btn-default" value="Reset"></button>
 </p>
 </form>
 
